@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QuizHub</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <a href="#" class="logo">QuizHub.</a>
+
+        <nav class="navbar">
+          <a href="#" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <section class="home">
+          <div class="home-content">
+            <h1>Welcome to QuizHub</h1>
+            <p>
+              Your ultimate trivia destination! Challenge yourself with our
+              curated quizzes and track your progress as you play. Perfect for
+              learning new facts or competing with friends.
+            </p>
+            <button class="start-btn">Start Quiz</button>
+          </div>
+        </section>
+
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>QuizHub</h1>
+            <div class="quiz-header">
+              <span class="quiz-app active">Programming</span>
+              <span class="header-score">Score: 0 / 10</span>
+            </div>
+            <h2 class="quiz-question">What does HTML stand for ?</h2>
+            <ul class="answer-option"></ul>
+
+            <div class="quiz-pop-answers"></div>
+
+            <div class="quiz-footer">
+              <span class="question-total"></span>
+              <button class="next-btn">Next</button>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h2>Quiz Result !</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+              <span class="score-text"></span>
+            </div>
+            <div class="buttons">
+              <button class="try-again-btn">Try Again</button>
+              <button class="go-home-btn">Go to Home</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="pop-up">
+      <h2>Quiz Configuration</h2>
+      <div class="config-option">
+        <h4>Select Category</h4>
+        <div class="category-options">
+          <button class="category-btn">Programming</button>
+          <button class="category-btn">Football</button>
+          <button class="category-btn">Science</button>
+          <button class="category-btn">Entertainment</button>
+        </div>
+      </div>
+
+      <div class="config-option">
+        <h4>No. of Questions</h4>
+        <div class="question-options">
+          <button class="question-btn">5</button>
+          <button class="question-btn">10</button>
+          <button class="question-btn">15</button>
+          <button class="question-btn">20</button>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button class="info-btn exit-btn">Exit Quiz</button>
+        <a href="#" class="info-btn continue-btn">Continue</a>
+      </div>
+    </div>
+
+    <script src="scriptfolder/questions.js"></script>
+    <script src="scriptfolder/script.js"></script>
+  </body>
+</html>
