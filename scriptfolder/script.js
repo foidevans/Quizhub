@@ -29,6 +29,11 @@ continueBtn.onclick = () => {
   main.classList.remove("active");
   header.classList.add("hide-header");
 
+  questionIndexHistory.length = 0;
+  score = 0;
+  correctAnswersCount = 0;
+  updateScoreDisplay();
+
   quizBox.classList.add("active");
   quizBox.style.display = "block";
 
